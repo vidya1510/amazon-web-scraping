@@ -74,7 +74,7 @@ def analyze_data(filename):
 # Main runner
 if __name__ == "__main__":
     category = "laptop"
-    data = scrape_amazon(category, pages=3)
+    data = scrape_amazon(category, pages=2)
     if data:
         save_to_csv(data, f"{category}.csv")
         analyze_data(f"{category}.csv")
